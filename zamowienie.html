@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Kreator pizzy </title>
+        <link rel="stylesheet" href="css/formularze.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="baner">
+            <h1>Kreator pizzy</h1>
+        </div>
+        <div id="tresc">
+            <form action="mailto:adrian.szymczyk@pollub.edu.pl" method="POST" id="type_pizza">
+                <fieldset style="width: auto">
+                    <legend>Size:</legend>
+                    <input type="radio" name="size_pizza" id="small" value="Small"> <label for="small">Small</label>
+                    <input type="radio" name="size_pizza" id="middle" value="Middle"> <label for="middle">Middle</label>
+                    <input type="radio" name="size_pizza" id="big" value="Big"> <label for="big">Big</label>
+                </fieldset>
+                <fieldset style="width: auto">
+                    <legend>Ingredients:</legend>
+                    <input type="checkbox" name="Ham" id="ham" value="Ham"> <label for="ham">Ham</label> <br>
+                    <input type="checkbox" name="salami" id="salami" value="salami"> <label for="salami">Salami</label> <br>
+                    <input type="checkbox" name="chicken" id="chicken" value="chicken"> <label for="chicken">Chicken</label> <br>
+                    <input type="checkbox" name="onion" id="onion" value="onion"> <label for="onion">Onion</label> <br>
+                    <input type="checkbox" name="pineapple" id="pineapple" value="pineapple"> <label for="pineapple">Pineapple</label> <br>
+                    <input type="checkbox" name="tomato" id="tomato" value="tomato"> <label for="tomato">Tomato</label>
+                </fieldset>
+                <fieldset style="width: auto">
+                    <legend>Sauces:</legend>
+                    <label for="sauce">Choose sauce:</label>
+                    <select name="sauce" id="sauce" multiple>
+                        <option value="tomato sauce">Tomato sauce</option>
+                        <option value="garlic sauce">Garlic sauce</option>
+                        <option value="mild ketchup">Mild ketchup</option>
+                        <option value="spicy ketchup">Spicy ketchup</option>
+                    </select> <br>
+                    <label for="comments">Other comments: </label>
+                    <textarea rows="4" cols="50" name="comments" id="comments" form="type_pizza"></textarea>
+                </fieldset>
+                <div id="buttons">
+                    <input type="reset" value="Reset order">
+                    <input type="submit" value="Send order"> 
+                </div>
+            </form>
+        </div>
+        <div id="stopka">
+            <a href="index.html">Back to main</a>
+            <p>&copy;BP</p>
+        </div> 
+    </body>
+</html>
