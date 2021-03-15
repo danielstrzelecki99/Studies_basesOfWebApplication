@@ -25,47 +25,51 @@ body {
     background-color: rgba(0, 0, 0, .5);
 }
 
+/* ======================================================================== */
+
 #menu {
     background-color: #333;
     font-size: 0;
-    overflow: hidden;
 }
 
-#menu ul {
-    overflow: hidden;
+#menu #nav li ul {
+    /* overflow: hidden; */
     display: none;
 }
 
-#menu li {
+#menu #nav li:hover ul {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+
+#menu #nav>li {
+    position: relative;
     width: 25%;
     display: inline-block;
     text-align: center;
 }
 
-#menu a {
+#menu #nav>li a {
     display: block;
-    padding: 20px 15px;
+    padding: 20px 0;
     text-decoration: none;
     color: #ddd;
     font-size: 26px;
     transition: .3s;
 }
 
-#menu li:hover ul {
-    position: absolute;
-    display: block;
-    background-color: black;
-}
-
-#menu li ul li {
-    display: block;
-    width: 100%;
-}
-
-#menu a:hover {
+#menu #nav a:hover {
     background-color: #444;
     color: #fff;
 }
+
+#menu #nav li ul li {
+    display: block;
+}
+
+/* ========================================================================== */
 
 #tresc {
     float: left;
