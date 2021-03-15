@@ -207,3 +207,25 @@ div#sendrest input {
 div#sendrest input:hover {
     transform: scale(1.1);
 }
+
+/* galeria */
+
+#tresc .gallery li {
+    padding: 5px;
+    list-style: none;
+    float: left;
+    width: 33.33%;
+}
+
+#tresc .gallery li img {
+    width: 100%;
+    transition: .5s;
+}
+
+#tresc .gallery li img:hover {
+    transform: scale(1.5);
+}
+
+#tresc .gallery li a {
+    border: none;
+}
