@@ -8,6 +8,7 @@ body {
     width: 90%;
     max-width: 1920px;
     margin: 0 auto;
+    background-color: #eee;
 }
 
 #baner {
@@ -136,4 +137,69 @@ a img {
     text-align: center;
     padding: 15px 0;
     clear: both;
+}
+
+/* tabele */
+
+table {
+    border: 2px solid black;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+table caption {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+table thead th {
+    border: 2px solid black;
+}
+
+table td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #ccc;
+}
+
+#tresc table tr a {
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+/* formularz */
+
+#tresc {
+    padding: 10px 20px;
+}
+
+div#jezyk_programowania,
+div#sposob_zaplaty,
+div#sendrest {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150%;
+}
+
+div h4 {
+    font-size: 26px;
+}
+
+div#sendrest input {
+    width: 200px;
+    padding: 10px 0;
+    margin: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div#sendrest input:hover {
+    transform: scale(1.1);
 }
