@@ -15,6 +15,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     background-color: #eee;
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
     background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg);
     background-size: cover;
     color: #fff;
-    padding-top: calc(150px - 21px);
+    padding-top: 129px;
     text-align: center;
     font-size: 42px;
 }
@@ -93,6 +94,7 @@ aside .box {
     margin: 25% auto 0;
     padding: 10px 20px 20px 20px;
     background-color: #333;
+    border-radius: 10px;
     color: #bbb;
 }
 
@@ -130,6 +132,7 @@ main a {
     width: 200px;
     margin: 0 auto;
     border: 2px solid #333;
+    border-radius: 20px;
     color: black;
     line-height: 50px;
     text-decoration: none;
@@ -146,6 +149,7 @@ footer {
     font-size: 20px;
     text-align: center;
     padding: 15px 0;
+    border-radius: 20px;
     clear: both;
 }
 
@@ -229,7 +233,7 @@ main .gallery li img {
 }
 
 main .gallery li img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 main .gallery li a {
