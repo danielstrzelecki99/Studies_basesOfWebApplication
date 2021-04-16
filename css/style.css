@@ -36,7 +36,11 @@ header h2 {
 
 nav {
     background-color: #333;
-    font-size: 0;
+}
+
+nav #nav{
+    display: flex;
+    list-style: none;
 }
 
 nav #nav li ul {
@@ -53,9 +57,8 @@ nav #nav li:hover ul {
 
 nav #nav>li {
     position: relative;
-    width: 25%;
-    display: inline-block;
     text-align: center;
+    flex-grow: 1;
 }
 
 nav #nav>li a {
