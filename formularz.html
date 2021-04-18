@@ -26,83 +26,86 @@
             <li><a href="galeria.html">Galeria</a></li>
         </ul>
     </nav>
-    <main>
-        <h3>Przykładowy formularz HTML to:</h3>
-        <ul>
-            <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
-            <li>&lt;input&gt; - znacznik umożliwia wstawienie różych pól (pole tekstowe, przycisk typu radio, przycisk
-                typu checkbox) w zależności od wartości jego atrybutu type</li>
-            <li>&lt;select&gt; - pole forumlarzaa typu lista rozwijana</li>
-            <li>&lt;textarea&gt; - pole forumlarza typu obszar tekstowy</li>
-            <li>&lt;button&gt; - pole forumarza typu przycisk</li>
-        </ul>
-        <form action="mailto:daniel.strzelecki@pollub.edu.pl" method="POST">
-            <div id="clientdata">
-                <table>
-                    <tr>
-                        <td><label for="lname">Nazwisko: </label> </td>
-                        <td><input type="text" id="lname" name="lname" /><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="age">Wiek: </label></td>
-                        <td><input type="number" id="age" name="age" /><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="country">Państwo: </label> </td>
-                        <td>
-                            <select name="country" id="country">
-                                <option value="Polska">Polska</option>
-                                <option value="Niemcy">Niemcy</option>
-                                <option value="Wielka Brytania">Wielka Brytania</option>
-                            </select><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="adress_emial">Adres e-mail: </label> </td>
-                        <td><input type="text" id="adress_emial" name="adress_emial"> <br></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="jezyk_programowania">
-                <h4>Zamawiam tutorial z języka:</h4>
-                <input type="checkbox" name="PHP" id="PHP" value="PHP"> <label for="PHP">PHP</label>
-                <input type="checkbox" name="C/C++" id="C/C++" value="C/C++"> <label for="C/C++">C/C++</label>
-                <input type="checkbox" name="Java" id="Java" value="Java"> <label for="Java">Java</label> <br>
-            </div>
-            <div id="sposob_zaplaty">
-                <h4>Sposób zapłaty:</h4>
-                <input type="radio" name="payment-method" id="eurocard" value="eurocard"> <label
-                    for="eurocard">eurocard</label>
-                <input type="radio" name="payment-method" id="visa" value="visa"> <label for="visa">visa</label>
-                <input type="radio" name="payment-method" id="przelew_bankowy" value="przelew_bankowy"> <label
-                    for="przelew_bankowy">przelew bankowy</label> <br>
-            </div>
-            <div id="sendrest">
-                <input type="submit" value="Wyślij">
-                <input type="reset" value="Anuluj">
-            </div>
-        </form>
-    </main>
-    <aside>
-        <div class="box">
-            <h3>Walidatory:</h3>
+    <section>
+        <main>
+            <h3>Przykładowy formularz HTML to:</h3>
             <ul>
-                <li> <a href="http://validator.w3.org/">HTML </a></li>
-                <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
+                <li>&lt;input&gt; - znacznik umożliwia wstawienie różych pól (pole tekstowe, przycisk typu radio,
+                    przycisk
+                    typu checkbox) w zależności od wartości jego atrybutu type</li>
+                <li>&lt;select&gt; - pole forumlarzaa typu lista rozwijana</li>
+                <li>&lt;textarea&gt; - pole forumlarza typu obszar tekstowy</li>
+                <li>&lt;button&gt; - pole forumarza typu przycisk</li>
             </ul>
-        </div>
-        <div class="box">
-            <h3>Kursy:</h3>
-            <ul>
-                <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
-                <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
-                <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
-                <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
-            </ul>
-        </div>
-    </aside>
+            <form action="mailto:daniel.strzelecki@pollub.edu.pl" method="POST">
+                <div id="clientdata">
+                    <table>
+                        <tr>
+                            <td><label for="lname">Nazwisko: </label> </td>
+                            <td><input type="text" id="lname" name="lname" /><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="age">Wiek: </label></td>
+                            <td><input type="number" id="age" name="age" /><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="country">Państwo: </label> </td>
+                            <td>
+                                <select name="country" id="country">
+                                    <option value="Polska">Polska</option>
+                                    <option value="Niemcy">Niemcy</option>
+                                    <option value="Wielka Brytania">Wielka Brytania</option>
+                                </select><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="adress_emial">Adres e-mail: </label> </td>
+                            <td><input type="text" id="adress_emial" name="adress_emial"> <br></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="jezyk_programowania">
+                    <h4>Zamawiam tutorial z języka:</h4>
+                    <input type="checkbox" name="PHP" id="PHP" value="PHP"> <label for="PHP">PHP</label>
+                    <input type="checkbox" name="C/C++" id="C/C++" value="C/C++"> <label for="C/C++">C/C++</label>
+                    <input type="checkbox" name="Java" id="Java" value="Java"> <label for="Java">Java</label> <br>
+                </div>
+                <div id="sposob_zaplaty">
+                    <h4>Sposób zapłaty:</h4>
+                    <input type="radio" name="payment-method" id="eurocard" value="eurocard"> <label
+                        for="eurocard">eurocard</label>
+                    <input type="radio" name="payment-method" id="visa" value="visa"> <label for="visa">visa</label>
+                    <input type="radio" name="payment-method" id="przelew_bankowy" value="przelew_bankowy"> <label
+                        for="przelew_bankowy">przelew bankowy</label> <br>
+                </div>
+                <div id="sendrest">
+                    <input type="submit" value="Wyślij">
+                    <input type="reset" value="Anuluj">
+                </div>
+            </form>
+        </main>
+        <aside>
+            <div class="box">
+                <h3>Walidatory:</h3>
+                <ul>
+                    <li> <a href="http://validator.w3.org/">HTML </a></li>
+                    <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Kursy:</h3>
+                <ul>
+                    <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                    <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                    <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                    <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                </ul>
+            </div>
+        </aside>
+    </section>
     <footer>
-        <p>&copy;BP</p>
+        <p>Daniel Strzelecki &copy;BP</p>
     </footer>
 </body>
 

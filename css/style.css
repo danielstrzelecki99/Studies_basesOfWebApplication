@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 body {
     width: 90%;
     max-width: 1920px;
@@ -38,7 +32,7 @@ nav {
     background-color: #333;
 }
 
-nav #nav{
+nav #nav {
     display: flex;
     list-style: none;
 }
@@ -80,16 +74,17 @@ nav #nav li ul li {
 }
 
 /* ========================================================================== */
+section {
+    display: flex;
+}
 
 main {
-    float: left;
-    width: 80%;
+    flex-basis: 80%;
     background-color: #ddd;
 }
 
 aside {
-    float: left;
-    width: 20%;
+    flex-grow: 1;
 }
 
 aside .box {
@@ -153,7 +148,6 @@ footer {
     text-align: center;
     padding: 15px 0;
     border-radius: 20px;
-    clear: both;
 }
 
 /* tabele */
