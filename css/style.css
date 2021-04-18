@@ -16,14 +16,14 @@ header {
     height: 300px;
     background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg);
     background-size: cover;
-    color: #fff;
     padding-top: 129px;
-    text-align: center;
-    font-size: 42px;
 }
 
 header h2 {
     background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
 }
 
 /* ======================================================================== */
@@ -47,6 +47,7 @@ nav #nav li:hover ul {
     display: block;
     width: 100%;
     background-color: black;
+    z-index: 1;
 }
 
 nav #nav>li {
@@ -79,7 +80,7 @@ section {
 }
 
 main {
-    flex-basis: 80%;
+    width: 80%;
     background-color: #ddd;
 }
 
@@ -217,11 +218,16 @@ div#sendrest input:hover {
 
 /* galeria */
 
+main .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
 main .gallery li {
     padding: 5px;
     list-style: none;
-    float: left;
-    width: 33.33%;
+    flex-basis: 33.33%;
 }
 
 main .gallery li img {
@@ -235,4 +241,40 @@ main .gallery li img:hover {
 
 main .gallery li a {
     border: none;
+}
+
+@media (max-width: 950px) {
+    section {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    aside {
+        display: flex;
+    }
+
+    aside .box {
+        margin: 5% auto 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    nav #nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 840px) {
+    main .gallery li {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    main .gallery li {
+        flex-basis: 100%;
+    }
 }
