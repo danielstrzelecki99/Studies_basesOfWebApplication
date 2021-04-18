@@ -338,6 +338,10 @@ main .gallery li a {
     main h3 {
         font-size: 36px;
     }
+
+    main ul {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 400px) {
