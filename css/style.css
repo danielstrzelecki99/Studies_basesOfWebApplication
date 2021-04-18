@@ -13,6 +13,7 @@ body {
 }
 
 header {
+    position: relative;
     height: 44vh;
     background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg);
     background-size: cover;
@@ -25,6 +26,15 @@ header {
 header h2 {
     background-color: rgba(0, 0, 0, .5);
     transform: translateY(-50%);
+}
+
+header .fas {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
 }
 
 /* ======================================================================== */
@@ -281,5 +291,25 @@ main .gallery li a {
 
     header {
         font-size: 36px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    /* hamburger */
+    header .fas {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        position: absolute;
+        transform: translateX(-550px);
+        transition: .5s;
+    }
+
+    nav.active {
+        width: 90%;
+        transform: translateX(0);
     }
 }
