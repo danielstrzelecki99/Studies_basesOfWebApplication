@@ -86,11 +86,11 @@ nav #nav li ul li {
 }
 
 /* ========================================================================== */
-section {
+main {
     display: flex;
 }
 
-main {
+section {
     width: 80%;
     background-color: #ddd;
 }
@@ -125,19 +125,19 @@ aside .box {
     transform: translateX(10%);
 }
 
-main h3 {
+section h3 {
     text-align: center;
     font-size: 40px;
     padding: 30px 0;
 }
 
-main ul {
+section ul {
     margin-left: 50px;
     margin-bottom: 50px;
     font-size: 20px;
 }
 
-main a {
+section a {
     display: block;
     width: 200px;
     margin: 0 auto;
@@ -189,7 +189,7 @@ table tbody tr:nth-of-type(odd) {
     background-color: #ccc;
 }
 
-main table tr a {
+section table tr a {
     width: 100%;
     border: none;
     margin: 0;
@@ -197,7 +197,7 @@ main table tr a {
 
 /* formularz */
 
-main {
+section {
     padding: 10px 20px;
 }
 
@@ -229,37 +229,37 @@ div#sendrest input:hover {
 
 /* galeria */
 
-main .gallery {
+section .gallery {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
-main .gallery li {
+section .gallery li {
     padding: 5px;
     list-style: none;
     flex-basis: 33.33%;
 }
 
-main .gallery li img {
+section .gallery li img {
     width: 100%;
     transition: .5s;
 }
 
-main .gallery li img:hover {
+section .gallery li img:hover {
     transform: scale(1.3);
 }
 
-main .gallery li a {
+section .gallery li a {
     border: none;
 }
 
 @media (max-width: 950px) {
-    section {
+    main {
         flex-direction: column;
     }
 
-    main {
+    section {
         width: 100%;
     }
 
@@ -279,13 +279,13 @@ main .gallery li a {
 }
 
 @media (max-width: 840px) {
-    main .gallery li {
+    section .gallery li {
         flex-basis: 50%;
     }
 }
 
 @media (max-width: 600px) {
-    main .gallery li {
+    section .gallery li {
         flex-basis: 100%;
     }
 
@@ -335,11 +335,11 @@ main .gallery li a {
         font-size: 11px;
     }
 
-    main h3 {
+    section h3 {
         font-size: 36px;
     }
 
-    main ul {
+    section ul {
         font-size: 18px;
     }
 }
