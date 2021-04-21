@@ -46,12 +46,22 @@
                 <div id="clientdata">
                     <table>
                         <tr>
+                            <td><label for="lname">Imię: </label> </td>
+                            <td><input type="text" id="lname" name="lname"
+                                    pattern="[A-ZĄĆŁĘŃŚÓŻŹ][a-ząęłóćńśżź]{1,20}( [A-Z]+[a-z]{1,20})?" required
+                                    title="Imię musi zaczynać się z wielkiej litery, w przypadku dwóch imion należy oddzielić je spacją" /><br>
+                            </td>
+                        </tr>
+                        <tr>
                             <td><label for="lname">Nazwisko: </label> </td>
-                            <td><input type="text" id="lname" name="lname" /><br></td>
+                            <td><input type="text" id="lsurname" name="lsurname"
+                                    pattern="[A-ZĄĆŁĘŃŚÓŻŹ][a-ząęłóćńśżź]{1,20}(-[A-Z]+[a-z]{1,20})?" required
+                                    title="Nazwisko musi zaczynać się z wielkiej litery, w przypadku dwóch nazwisk należy oddzielić je myślnikiem" /><br>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="age">Wiek: </label></td>
-                            <td><input type="number" id="age" name="age" /><br></td>
+                            <td><input type="number" id="age" name="age" min="16" step="1" required /><br></td>
                         </tr>
                         <tr>
                             <td><label for="country">Państwo: </label> </td>
@@ -64,8 +74,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="adress_emial">Adres e-mail: </label> </td>
-                            <td><input type="text" id="adress_emial" name="adress_emial"> <br></td>
+                            <td><label id="adress_emial">Adres e-mail: </label> </td>
+                            <td><input type="text" id="adress_email" name="adress_email" placeholder="example@com.pl"
+                                    required>
+                                <br></td>
                         </tr>
                     </table>
                 </div>
@@ -73,11 +85,12 @@
                     <h4>Zamawiam tutorial z języka:</h4>
                     <input type="checkbox" name="PHP" id="PHP" value="PHP"> <label for="PHP">PHP</label>
                     <input type="checkbox" name="C/C++" id="C/C++" value="C/C++"> <label for="C/C++">C/C++</label>
-                    <input type="checkbox" name="Java" id="Java" value="Java"> <label for="Java">Java</label> <br>
+                    <input type="checkbox" name="Java" id="Java" value="Java"> <label for="Java">Java</label>
+                    <br>
                 </div>
                 <div id="sposob_zaplaty">
                     <h4>Sposób zapłaty:</h4>
-                    <input type="radio" name="payment-method" id="eurocard" value="eurocard"> <label
+                    <input type="radio" name="payment-method" id="eurocard" value="eurocard" required> <label
                         for="eurocard">eurocard</label>
                     <input type="radio" name="payment-method" id="visa" value="visa"> <label for="visa">visa</label>
                     <input type="radio" name="payment-method" id="przelew_bankowy" value="przelew_bankowy"> <label
