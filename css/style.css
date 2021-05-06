@@ -106,6 +106,7 @@ aside .box {
     background-color: #333;
     border-radius: 10px;
     color: #bbb;
+    box-shadow: 10px 5px 5px gray;
 }
 
 .box ul {
@@ -253,6 +254,7 @@ section .gallery li img:hover {
 section .gallery li a {
     border: none;
 }
+
 
 @media (max-width: 950px) {
     main {
